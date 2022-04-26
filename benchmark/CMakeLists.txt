@@ -1,0 +1,6 @@
+add_custom_target(benchmark)
+set(CMAKE_CXX_STANDARD 17)
+find_package(BLAS REQUIRED)
+add_executable(atp_benchmark atp_benchmark.cxx)
+target_link_libraries(atp_benchmark ${nlopt_lib} ${BLAS_LIBRARIES})
+add_dependencies(benchmark atp_benchmark)

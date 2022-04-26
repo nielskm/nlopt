@@ -337,6 +337,8 @@ if (NLOPT_TESTS)
   add_subdirectory (test)
 endif ()
 
+add_subdirectory(benchmark)
+
 set (CPACK_PACKAGE_NAME          "${CMAKE_PROJECT_NAME}")
 set (CPACK_PACKAGE_VERSION_MAJOR "${NLOPT_MAJOR_VERSION}")
 set (CPACK_PACKAGE_VERSION_MINOR "${NLOPT_MINOR_VERSION}")
